@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <title>Gllacy</title>
 </head>
 
@@ -39,7 +40,16 @@
             </form>
           </div>
           <div class="user-block-entrance">
-
+            <a class="user-login-link" href="#">Вход</a>
+                <form action="#" method="POST">
+                  <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+                  <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+                  <button class="btn" type="submit">Войти</button>
+                  <div class="form-link">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Новая регистрация</a>
+                  </div>
+                </form>
           </div>
           <div class="user-block-basket">
             <a class="user-box-link" href="#">Пусто</a>
@@ -144,6 +154,7 @@
     </div>
   </div>
   <footer class="main-footer">
+    <div class="container">
     <div class="social">
       <a href="#" class="icon social-icon-tw"></a>
       <a href="#" class="icon social-icon-ig"></a>
@@ -161,6 +172,7 @@
     <div class="copyright">
       <a href="#" class="copyright-logo"></a>
       <p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>© 2016</p>
+    </div>
     </div>
   </footer>
   </div>
