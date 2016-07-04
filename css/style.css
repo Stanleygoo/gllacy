@@ -1,0 +1,201 @@
+body {
+  font-family:  "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #849d8f;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1126px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-navigation {
+  float: left;
+  width: 500px;
+}
+.user-block {
+  float: right;
+  width: 270px;
+}
+.promo-left {
+  float: left;
+  width: 560px;
+}
+.promo-right {
+  float: right;
+  width: 560px;
+}
+.ice-cream {
+  float: left;
+  width: 267px;
+  margin-right: 18px;
+}
+.ice-cream:last-child {
+  margin-right: 0;
+}
+.content-description-left {
+  width: 550px;
+  float: left;
+}
+.content-description-right {
+  width: 560px;
+  float: right;
+}
+.blog-news {
+  width: 560px;
+  float: left;
+}
+.delivery-content {
+  width: 560px;
+  float: right;
+}
+.social {
+  width: 200px;
+  float: left;
+  margin-right: 200px;
+}
+.production {
+    float: left;
+    width: 340px;
+
+}
+.copyright {
+  float: right;
+  width: 200px;
+}
+.main-footer {
+  margin-top: 80px;
+}
+.content-description {
+  background-image: url("../img/wafer-bg.jpg");
+  background-repeat: repeat;
+  color: black;
+}
+.blog-img {
+ margin: 0;
+
+}
+.user-block-basket .user-box-table {
+  display: none;
+}
+.breadcrumbs {
+  font-size: 0;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+.catalog-form fieldset {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background: #a9b9af;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-bottom: 38px;
+  padding: 9px 16px 9px 13px;
+}
+
+.catalog-form .catalog-form-select {
+  padding: 7px 9px 8px 9px;
+}
+
+
+
+.catalog-form legend {
+  position: absolute;;
+  top: -21px;
+  left: 14px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.catalog-form select {
+  background: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+.catalog-content {
+  font-size: 0;
+  margin-bottom: 46px;
+}
+.catalog-items {
+  width: 267px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 25px;
+  margin-bottom: 35px;
+}
+.catalog-item {
+  font-size: 16px;
+}
+
+.catalog-item img {
+  border-radius: 50%;
+}
+.catalog-content .catalog-items:nth-child(4n) {
+  margin-right: 0;
+}
+.pagination {
+  float: right;
+  width: 267px;
+  margin-bottom: 30px;
+  text-align: right;
+  font-size: 0;
+}
+
+.pagination .active {
+  background: #fff;
+  color: #323232;
+}
+
+.pagination .disabled {
+  opacity: 0.3;
+}
+
+.pagination a {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  width: 27px;
+  height: 27px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 27px;
+  background: transparent;
+  border-radius: 50%;
+  text-decoration: none;
+  padding-left: 1px;
+  color: #fff;
+}
+
+.pagination a:hover {
+  background-color: #9db1a5;
+  color: #fff;
+}
+
+.pagination a:active {
+  background: #fff;
+  color: #323232;
+}
+
+.pagination .prev,
+.pagination .next {
+  font-size: 0;
+}
+
+.ice-cream img {
+  border-radius: 50%;
+}
