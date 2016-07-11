@@ -11,8 +11,8 @@
 
 <body class="inner-page">
     <div class="global-wrapper">
-        <header class="main-header">
-                <div class="container clearfix">
+      <div class="content-wrapper">
+        <header class="main-header clearfix">
                     <div class="main-logo">
                         <a href="index.html"><img src="img/logo.png" alt="Header Logo" height="52" width="153"></a>
                     </div>
@@ -32,66 +32,61 @@
                             <li><a href="#">О Компании</a></li>
                         </ul>
                     </nav>
-                    <div class="user-block">
-                        <div class="user-block-search">
-                            <a class="search-link sprite" href="#"></a>
-                            <form action="#" method="POST">
-                                <input type="search" name="search" placeholder="Что ищем?">
-                            </form>
-                        </div>
-                        <div class="user-block-entrance">
-                            <a class="user-login-link" href="#">Вход</a>
-                            <form action="#" method="POST">
-                                <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
-                                <input type="password" name="login-password" id="login-password" placeholder="Пароль">
-                                <button class="btn" type="submit">Войти</button>
-                                <div class="form-link">
-                                    <a href="#">Забыли пароль?</a>
-                                    <a href="#">Новая регистрация</a>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="user-block-basket">
-                            <a class="user-box-link" href="#">2 товара</a>
-                            <table class="user-box-table">
-                                <tr>
-                                    <td>
-                                        <a href="#"><img src="img/cross.png" alt="убрать" width="10" height="10"></a>
-                                    </td>
-                                    <td>
-                                        <a href="#"><img src="img/mini-orange.png" alt="апельсиновое" width="33" height="33"></a>
-                                    </td>
-                                    <td><a href="#">Пломбир с апельсиновым джемом</a></td>
-                                    <td>1,5 кг х <span class="price-td">200 руб.</span></td>
-                                    <td>300 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <a href="#"><img src="img/cross.png" alt="убрать" width="10" height="10"></a>
-                                    </td>
-                                    <td>
-                                        <a href="#"><img src="img/mini-strawberry.png" alt="клубничное" width="33" height="33"></a>
-                                    </td>
-                                    <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
-                                    <td>1,5 кг х <span class="price-td">300 руб.</span></td>
-                                    <td>450 руб.</td>
-                                </tr>
-                                <tr>
-                                    <td class="price-end" colspan="5"><span class="price-bold">Итого: 750 руб.</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="box-btn" colspan="5"><a class="btn" href="#">Оформить заказ</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="user-block-contacts">
-                            <p>С 10 до 20, ежедневно</p>
-                            <p>8 812 450-25-25</p>
-                        </div>
-                    </div>
-                </div>
+                    <div class="user">
+           <div class="user-block">
+             <div class="search-block">
+               <a class="search-link sprite" href="#"></a>
+               <form action="#" method="POST">
+                 <input type="search" name="search" placeholder="Что ищем?">
+               </form>
+             </div>
+
+             <div class="user-login-block">
+               <a class="user-login-link" href="#">Вход</a>
+               <form class="clearfix" action="#" method="POST">
+                 <input type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+                 <input type="password" name="login-password" id="login-password" placeholder="Пароль">
+                 <button class="btn" type="submit">Войти</button>
+                 <div class="form-link">
+                   <span><a href="#">Забыли пароль?</a></span>
+                   <span><a href="#">Новая регистрация</a></span>
+                 </div>
+               </form>
+             </div>
+
+             <div class="user-box inner-user-box">
+               <a class="user-box-link" href="#">2 товара</a>
+               <table class="user-box-table">
+                <tr>
+                  <td><a href="#"><img src="img/cross.png" alt="убрать" width="10" height="10"></a></td>
+                  <td><a href="#"><img src="img/mini-orange.png" alt="апельсиновое" width="33" height="33"></a></td>
+                  <td><a href="#">Пломбир с апельсиновым джемом</a></td>
+                  <td>1,5 кг х <span class="price-td">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><a href="#"><img src="img/cross.png" alt="убрать" width="10" height="10"></a></td>
+                  <td><a href="#"><img src="img/mini-strawberry.png" alt="клубничное" width="33" height="33"></a></td>
+                  <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
+                  <td>1,5 кг х <span class="price-td">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td class="price-end" colspan="5"><span class="price-bold">Итого: 750 руб.</span></td>
+                </tr>
+                <tr>
+                  <td class="box-btn" colspan="5"><a class="btn" href="#">Оформить заказ</a></td>
+                </tr>
+               </table>
+             </div>
+           </div>
+
+           <div class="user-contacts">
+             <p>С 10 до 20, ежедневно <span class="user-contacts-number">8 812 450-25-25</span></p>
+           </div>
+         </div>
         </header>
-        <main class="container">
+        <main class="inner-main">
             <ul class="breadcrumbs">
                 <a href="#"><li>Главная</li></a>
                 <a href="#"><li>Каталог</li></a>
@@ -151,7 +146,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -167,7 +162,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочно-кофейное с кусочками шоколада</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -183,7 +178,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -199,7 +194,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -215,7 +210,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное с брусничным джемом  </a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное с брусничным джемом  </a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -230,7 +225,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочно-черничное с цельными ягодами черники </a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочно-черничное с цельными ягодами черники </a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -246,7 +241,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочно-лимонное с карамельной присыпкой</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -262,7 +257,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное с шоколадной стружкой</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное с шоколадной стружкой</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -278,7 +273,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочно-ванильное с кусочками шоколада</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -294,7 +289,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочноe с ментоловым сиропом</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочноe с ментоловым сиропом</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -310,7 +305,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное с кусочками черного шоколада</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное с кусочками черного шоколада</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -326,7 +321,7 @@
                             <span>/кг</span>
                             </span>
                         </div>
-                        <p><a href="#">Сливочное с мятным сиропом</a></p>
+                        <p class="bestseller-catalog-item-about"><a href="#">Сливочное с мятным сиропом</a></p>
                         <a class="btn" href="#">быстрый просмотр</a>
                     </div>
                 </div>
@@ -341,13 +336,12 @@
                 <a class="next" href="#">next</a>
             </div>
         </main>
-        <footer class="main-footer">
-            <div class="container">
+        <footer class="main-footer clearfix">
                 <div class="social">
-                    <a href="#" class="icon social-icon-tw">Twitter</a>
-                    <a href="#" class="icon social-icon-insta">insta</a>
-                    <a href="#" class="icon social-icon-fb">Facebook</a>
-                    <a href="#" class="icon social-icon-vk">Vkontakte</a>
+                    <a href="#" class="social-btn social-icon-tw">Twitter</a>
+                    <a href="#" class="social-btn social-icon-insta">insta</a>
+                    <a href="#" class="social-btn social-icon-fb">Facebook</a>
+                    <a href="#" class="social-btn social-icon-vk">Vkontakte</a>
                 </div>
                 <ul class="production">
                     <li class="production-list"><a href="#">Для поставщиков</a></li>
@@ -360,8 +354,8 @@
                     <a href="#" class="copyright-logo"></a>
                     <p>Сделано в <a href="http://www.htmlacademy.ru">HTML Academy</a>© 2016</p>
                 </div>
-            </div>
         </footer>
+        </div>
     </div>
 </body>
 
