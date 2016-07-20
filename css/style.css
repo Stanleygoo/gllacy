@@ -5,7 +5,12 @@ body {
     color: #fff;
     background-color: #849d8f;
 }
-
+body input {
+  color: #000000;
+}
+body textarea {
+    color: #000000;
+}
 .clearfix::after {
     content: "";
     display: table;
