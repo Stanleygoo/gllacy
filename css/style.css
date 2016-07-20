@@ -530,6 +530,7 @@ body> input[type="radio"] {
     background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
     background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
     box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+    color: #ffffff;
 }
 .slide-btn:active {
     background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
@@ -631,23 +632,24 @@ body> input[type="radio"] {
 .promo .promo-left, .promo-right {
     margin-bottom: 40px;
 }
-.ice-cream {
+.ice-creams {
     width: 267px;
     float: left;
     margin-right: 26px;
     text-align: center;
     border-radius: 5px;
+    margin-bottom: 40px;
 }
-.ice-cream:last-child {
+.ice-creams:last-child {
     margin-right: 0;
 }
-.ice-cream, .catalog-item {
-    position: relative;
-}
-.ice-cream:hover, .catalog-item:hover {
+.ice-creams:hover, .catalog-items:hover {
     z-index: 100;
 }
-.ice-cream::after, .catalog-item::after {
+.ice-creams, .catalog-items {
+  position: relative;
+}
+.ice-creams::after, .catalog-items::after {
     position: absolute;
     content: "";
     top: -5px;
@@ -661,12 +663,70 @@ body> input[type="radio"] {
     opacity: 0.3;
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
-.ice-cream:hover::after, .catalog-item:hover::after {
+.ice-creams:hover::after, .catalog-items:hover::after {
     display: block;
 }
 .ice-cream, .catalog-item {
     position: relative;
     z-index: 2;
+}
+.ice-cream .btn,
+.catalog-item .btn {
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  top: 320px;
+  z-index: 10;
+  display: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 13px;
+  background: #f06341;
+  background-image: linear-gradient(to bottom, #f26843, #e34e3a);
+  border-radius: 50px;
+}
+.bestseller-item > p,
+.catalog-item > p {
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.ice-cream > p > a,
+.catalog-item > p > a {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #9db1a5;
+}
+/*.bestseller-wrapper:hover::after,
+.catalog-item-wrapper:hover::after {
+  display: block;
+}*/
+
+
+.ice-cream> p > a:hover,
+.catalog-item  > p > a:hover {
+  color: #ffbc9e;
+
+}
+.ice-creams:hover .btn,
+.catalog-items:hover .btn {
+  display: inline-block;
+  background-image: linear-gradient(to bottom, #f26843, #e34e3a);
+  margin-top: 20px;
+}
+
+
+.ice-cream > p > a:active,
+.catalog-item > p > a:active {
+  color: #ffbc9e;
 }
 .ice-creams img, .catalog-content img {
     border-radius: 50%;
@@ -681,41 +741,6 @@ body> input[type="radio"] {
     text-align: center;
     margin: 0;
     margin-top: 8px;
-}
-.bestseller-catalog-item-about a {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.3);
-}
-.bestseller-catalog-item-about a:hover {
-  color: #ffbc9e;
-}
-
-
-.bestseller-catalog-item-about a:active {
-  color: #ffbc9e;
-}
-
-
-.ice-cream .btn, .catalog-item .btn {
-    position: absolute;
-    left: 25px;
-    right: 25px;
-    top: 320px;
-    z-index: 10;
-    display: none;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #fff;
-    padding: 10px 13px;
-    background: #f06341;
-    background-image: linear-gradient(to bottom, #f26843, #e34e3a);
-    border-radius: 50px;
 }
 .ice-cream:hover .btn, .catalog-items:hover .btn {
     display: inline-block;
@@ -765,12 +790,11 @@ body> input[type="radio"] {
     font-size: 33px;
     text-shadow: 1px 1px 3px rgba(49, 50, 53, 0.5);
 }
-.ice-creams {
-    margin-bottom: 36px;
-}
-.ice-creams:hover,
-catalog-items:hover {
-  z-index: 101;
+
+.ice-cream,
+.catalog-item {
+  z-index: 2;
+  position: relative;
 }
 .content-description {
     background-image: url("../img/wafer-bg.jpg");
@@ -1194,6 +1218,17 @@ catalog-items:hover {
     width: 16px;
     height: 16px;
     border-width: 2px;
+}
+.inner-page label {
+  cursor: pointer;
+}
+body .btn {
+  outline: none;
+  border: none;
+}
+body input {
+  outline: none;
+  border: none;
 }
 .catalog-form .catalog-btn {
     display: inline-block;
