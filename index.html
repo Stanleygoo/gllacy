@@ -17,24 +17,24 @@
         <div class="content-wrapper">
             <header class="main-header clearfix">
                 <div class="main-logo">
-                    <img src="img/logo.png" alt="Header Logo" height="52" width="153">
+                    <img src="img/logo.png" alt="Header Logo" height="63" width="153">
                 </div>
                 <nav class="main-navigation">
-                    <ul class="main-navigation-items">
-                        <li>
-                            <a href="catalog.html">Каталог</a>
-                            <ul class="main-navigation-inside-menu">
-                                <li><a href="#">Новинки</a></li>
-                                <li><a href="#">Сливочное</a></li>
-                                <li><a href="#">Щербеты</a></li>
-                                <li><a href="#">Фруктовый лёд</a></li>
-                                <li><a href="#">Мелорин</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">О Компании</a></li>
-                    </ul>
-                </nav>
+           <ul class="main-navigation-item">
+             <li class="main-navigation-item-list">
+               <a href="catalog.html">Каталог</a>
+               <ul class="sub-menu">
+                 <li><a class="sub-menu-new" href="#">Новинки</a></li>
+                 <li><a href="#">Сливочное</a></li>
+                 <li><a href="#">Щербеты</a></li>
+                 <li><a href="#">Фруктовый лёд</a></li>
+                 <li><a class="sub-menu-melorin" href="#">Мелорин</a></li>
+               </ul>
+             </li>
+             <li class="main-navigation-item-list"><a href="#">Доставка и оплата</a></li>
+             <li class="main-navigation-item-list"><a href="#">О Компании</a></li>
+           </ul>
+         </nav>
                 <div class="user">
                     <div class="user-block">
                         <div class="search-block">
@@ -166,7 +166,7 @@
             </div>
 
             <section class="content-description clearfix">
-                <h3 class="content-description-h3">Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h3>
+                <h2 class="content-description-h2">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
                 <div class="content-description-left">
                     <p class="left-1">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     <p class="left-2">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
@@ -179,32 +179,33 @@
             <div class="blog clearfix">
                 <div class="blog-news">
                     <h2 class="blog-news-title">Новое в нашем блоге</h2>
-                    <p class="blog-news-text"><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+                    <p class="blog-news-text"><a href="#">10 способов сервировки фруктовых щербетов <br>к столу</a></p>
 
                 </div>
                 <div class="delivery">
                     <div class="delivery-content">
                         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-                        <form action="#" method="POST">
+                        <form action="/form" method="get">
                             <input type="email" name="email" placeholder="Электронная почта">
                             <button class="btn" type="submit" name="button">Отправить</button>
                         </form>
                     </div>
                 </div>
             </div>
-        </div>
+
         <div class="map clearfix">
             <div class="map-frame">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124054!2d30.320894616195037!3d59.9387968690478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sgr!4v1468565893571"
-                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    width="100%" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="contacts">
                 <p>Адрес главного офиса и
                     <br>офлайн магазина:<span>ул. Большая Конюшенная 19/8, Санкт-Петербург</span></p>
                 <p>Для заказа по телефону:
                     <br><span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
-                <a href="#" class="btn">Форма обратной связи</a>
+                <a href="/form" class="btn">Форма обратной связи</a>
             </div>
+        </div>
         </div>
         <div class="content-wrapper">
             <footer class="main-footer clearfix">
@@ -231,11 +232,11 @@
             <div class="feedback">
                 <button class="feedback-btn feedback-btn-close" type="button" name="button"><img src="img/reset.png" alt="закрыть" width="17" height="17">закрыть</button>
                 <div class="feedback-title">Мы обязательно вам ответим!</div>
-                <form action="#" method="post">
+                <form action="#" method="get">
                     <input type="text" name="login" id="name-feedback" placeholder="Как вас зовут?">
                     <input type="email" name="email" id="email-feedback" placeholder="Ваша почта для ответа?">
                     <textarea name="name" rows="8" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-                    <button class="btn" type="submit" name="button">Отправить</button>
+                    <button class="btn" type="submit" name="button" >Отправить</button>
                 </form>
             </div>
         </div>
